@@ -3,6 +3,7 @@ import ipywidgets as widgets
 from IPython.display import HTML, display, clear_output
 from traitlets import CInt
 
+
 colors = ['#f99','#cde','#cc0','#fc2']
 
 def set_delay(new_delay=300):
@@ -122,7 +123,7 @@ def _bubble_sort_display(x):
                 generate_table_row(x,[]+finished_indices,[]+finished_colors)
             )
         )
-        final_frames += generate_table_row(x,[]+finished_indices,[]+finished_colors,False)
+        final_frames += generate_table_row(x,[]+finished_indices,[]+finished_colors)
 
     finished_indices.insert(0,0)
     finished_colors.insert(0,2)
